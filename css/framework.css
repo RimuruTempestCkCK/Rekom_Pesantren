@@ -1,0 +1,353 @@
+/* box*/
+.d-flex {
+    display: flex;
+}
+.d-grid {
+    display: grid;
+}
+.d-block {
+    display: block;
+}
+.d-inline-block {
+    display: inline-block;
+}
+.align-center {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.f-1 {
+    flex: 1;
+}
+.f-w {
+    flex-wrap: wrap;
+}
+.g-5 {
+    gap: 5px;
+}
+.g-10 {
+    gap: 10px;
+}
+.g-20 {
+    gap: 20px;
+}
+.g-40 {
+    gap: 40px;
+}
+.w-full {
+    width: 100%;
+}
+.w-fit {
+    width: fit-content;
+}
+.w-60 {
+    width: 60px;
+}
+.h-60 {
+    height: 60px;
+}
+.h-full {
+    height: 100%;
+}
+@media (max-width: 767px) {
+    .txt-c-mobile {
+        text-align: center;
+    }
+    .none-mobile {
+        display: none;
+    }
+    .fs-13-mobile {
+        font-size: 13px;
+    }
+}
+/*  box */
+/* position */
+.p-relative {
+    position: relative;
+}
+.p-absolute {
+    position: absolute;
+}
+/* position */
+/* padding + margin */
+.p-0 {
+    padding: 0;
+}
+.p-5 {
+    padding: 5px;
+}
+.p-10 {
+    padding: 10px;
+}
+.p-15 {
+    padding: 15px;
+} 
+.p-20 {
+    padding: 20px;
+}
+.pt-0 {
+    padding-top: 0;
+}
+.pt-3 {
+    padding-top: 3px;
+}
+.pt-10 {
+    padding-top: 10px;
+}
+.pt-20 {
+    padding-top: 20px;
+}
+.pt-35 {
+    padding-top: 35px;
+}
+.pr-10 {
+    padding-right: 10px;
+}
+.pb-0 {
+    padding-bottom: 0;
+}
+.pb-5 {
+    padding-bottom: 5px;
+}
+.pb-10 {
+    padding-bottom: 10px;
+}
+.pb-15 {
+    padding-bottom: 15px;
+}
+.pb-20 {
+    padding-bottom: 20px;
+}
+.pb-35 {
+    padding-bottom: 35px;
+}
+.pl-5 {
+    padding-left: 5px;
+}
+.pl-10 {
+    padding-left: 10px;
+}
+.pl-25 {
+    padding-left: 25px;
+}
+.pl-30 {
+    padding-left: 30px;
+}
+.pl-35 {
+    padding-left: 35px;
+}
+.m-0 {
+    margin: 0;
+}
+.m-5 {
+    margin: 5px;
+}
+.m-20 {
+    margin: 20px;
+}
+.mt-0 {
+    margin-top: 0;
+}
+.mt-5 {
+    margin-top: 5px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-25 {
+    margin-top: 25px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.mb-0 {
+    margin-bottom: 0;
+}
+.mb-5 {
+    margin-bottom: 5px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-25 {
+    margin-bottom: 25px;
+}
+.ml-10 {
+    margin-left: 10px;
+}
+/* padding + margin */
+/* colors */
+.bg-eee {
+    background-color: #eee;
+}
+.bg-white {
+    background-color: #fff;
+}
+.bg-f6f6f6 {
+    background-color: #f6f6f6;
+}
+.bg-blue {
+    background-color: #0075ff;
+}
+.bg-orange {
+    background-color: #f59e0b;
+}
+.bg-green {
+    background-color: #22c55e;
+}
+.bg-twitter {
+    background-color: #1da1f2;
+}
+.bg-yt {
+    background-color: #ff0000;
+}
+.bg-fb {
+    background-color: #1877f2;
+}
+.bg-lin {
+    background-color: #0077b5;
+}
+.c-white {
+    color: #fff;
+}
+.c-black {
+    color: #000;
+}
+.c-grey {
+    color: #888;
+}
+.c-blue {
+    color: #0075ff;
+}
+.c-orange {
+    color: #f59e0b;
+}
+.c-green {
+    color: #22c55e;
+}
+.c-red {
+    color: #f44336;
+}
+.c-twitter {
+    color: #1da1f2;
+}
+.c-fb {
+    color: #1877f2;
+}
+.c-yt {
+    color: #ff0000;
+}
+.c-lin {
+    color: #0077b5;
+}
+/* colors */
+/* fonts */
+.txt-c {
+    text-align: center;
+}
+.txt-e {
+    text-align: end;
+}
+.txt-l {
+    text-align: left;
+}
+.fs-13 {
+    font-size: 13px;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.fs-15 {
+    font-size: 15px;
+}
+.fs-16 {
+    font-size: 16px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.fs-20 {
+    font-size: 20px;
+}
+.fw-bold {
+    font-weight: bold;
+}
+.fw-300 {
+    font-weight: 300;
+}
+.td-line {
+    text-decoration: line-through;
+}
+.td-none {
+    text-decoration: none;
+}
+/* fonts */
+/* ul */
+.style-none {
+    list-style: none;
+}
+/* ul */
+/* borders */
+.rad-6 {
+    border-radius: 6px;
+}
+.rad-10 {
+    border-radius: 10px;
+}
+.rad-half {
+    border-radius: 50%;
+}
+.b-none {
+    border: none;
+}
+/* borders */
+/* components */
+.btn-shape {
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+.l-btn-shape {
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hover-main:hover {
+    background-color: #0d69d5;
+} 
+/* display */
+.c-p {
+    cursor: pointer;
+}
+/* display end */
+/* transition */
+.t-0-3 {
+    transition: .3s;
+}

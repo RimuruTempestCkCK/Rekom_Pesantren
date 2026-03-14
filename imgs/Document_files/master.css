@@ -1,0 +1,301 @@
+:root {
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+  }
+* {
+    box-sizing: border-box;
+}
+*:focus {
+    outline: none;
+}
+*:focus::placeholder {
+    opacity: 0;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue-color);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--blue-alt-color);
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.page {
+    background-color: #f1f5f9;
+    min-height: 100vh;
+}
+.active {
+    background-color: #f6f6f6;
+}
+/* start of side bar */
+.side-bar {
+    position: relative;
+    width: 250px;
+    box-shadow: 0 0 5px #aaa;
+} 
+.side-bar h3::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(100% + 4px);
+    position: absolute;
+    border: 3px solid #fff;
+    background-color: #000;
+    z-index: 1;
+}
+.side-bar h3::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: #000;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(100% + 10px);
+}
+.side-bar ul li {
+    transition: .3s;
+    cursor: pointer;
+}
+.side-bar ul li:hover {
+    background-color: #f6f6f6;
+}
+@media (max-width: 767px) {
+    .side-bar {
+        width: 62px;
+        padding: 10px;
+    }
+    .side-bar ul li span {
+        display: none;
+    }
+}
+/* end of side bar */
+/* start of content header*/
+.header {
+    width: 100%;
+}
+.header .search {
+    height: fit-content;
+}
+.header .search input {
+    border: 1px #cfcfcf solid;
+    width: 140px;
+    caret-color: #848491;
+    transition: .3s;
+}
+.header .search input:focus {
+    width: 160px;
+}
+.header .search span {
+    left: 5px;
+    color: #848491;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header img {
+    width: 32px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.header .user span {
+    cursor: pointer;
+}
+.header .user span::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--red-color);
+    right: -2px;
+    top: -2px;
+    position: absolute;
+}
+/* end of content header */
+/* content */
+.content h1 {
+    margin: 20px 20px 40px;
+}
+.content h1::before,
+.content h1::after {
+    content: '';
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+.content h1::before {
+    width: 120px;
+    background-color: #fff;
+}
+.content h1::after {
+    width: 40px;
+    background-color: #000;
+}
+.sections {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+/* welcome widget */
+.sections .welcome {
+    overflow: hidden;
+}
+.sections .welcome-header img {
+    width: 200px;
+    margin-bottom: -10px;
+}
+.sections .welcome-body .icon {
+    height: 40px;
+}
+.sections .welcome-body img {
+    width: 64px;
+    border-radius: 50%;
+    margin-top: -34px;
+    margin-left: 10px;
+    border: 4px solid #fff;
+}
+.sections .welcome-body .text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+    border-top:  1px solid #e6e6e6;
+}
+.sections .welcome-body .text p {
+    font-size: 20px;
+}
+.sections .welcome-body .text span {
+    display: block;
+    color: #9f9f9f;
+    font-size: 14px;
+    margin: 5px;
+}
+.sections .welcome-body .visit {
+    margin: 0 15px 15px auto;
+    transition: .3s;
+}
+.sections .welcome-body .visit:hover {
+    background-color: var(--blue-alt-color);
+}
+@media (max-width: 767px) {
+    .welcome .text {
+        flex-direction: column;
+    }
+    .sections {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+/* end of welcome widget */
+/* start draft widget */
+.sections .quick-draft form textarea {
+    resize: none;
+    min-height: 180px;
+}
+.sections .quick-draft form .save {
+    margin: 10px 10px 10px auto;
+}
+.sections .quick-draft form .save:hover {
+    background-color: var(--blue-alt-color);
+    cursor: pointer;
+}
+/* end of draft */
+/* start of targets */
+.targets .target-row .icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+.targets .target-row .progress {
+    height: 4px;
+}
+.targets .target-row .progress > span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+.targets .target-row .progress > span span {
+    position: absolute;
+    bottom: 16px;
+    right: -21px;
+    padding: 4px 5px;
+    border-radius: 6px;
+}
+.targets .target-row .progress > span span::before {
+    content: '';
+    border-color: transparent;
+    border-style: solid;
+    border-width: 6px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+}
+.targets .blue .progress > span span::before {
+    border-top-color: var(--blue-color);
+}
+.targets .orange .progress > span span::before {
+    border-top-color: var(--orange-color);
+}
+.targets .green .progress > span span::before {
+    border-top-color: var(--green-color);
+}
+.blue .icon,
+.blue .progress {
+    background-color: rgb(0 117 255 / 20%);
+}
+.orange .icon,
+.orange .progress {
+    background-color: rgb(245 158 11 / 20%);
+}
+.green .icon,
+.green .progress {
+    background-color: rgb(34 197 94 / 20%);
+}
+/* end of targets */
+/* start of tickets */
+.tickets .box {
+    border: 1px #ddd solid;
+    width: calc((100% / 2) - 10px);
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.profile {
+    height: 50000px;
+}
+/* end of tickets */
+/* start of news */
+.news {
+    flex-direction: column;
+}
+.news .box img {
+    width: 100px;
+}
+.news .box .date {
+    margin-left: auto;
+}
+@media (max-width: 767px) {
+    .news .box {
+        flex-direction: column;
+    }
+}
