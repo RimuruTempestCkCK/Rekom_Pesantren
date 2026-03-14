@@ -53,10 +53,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="css/framework.css">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <title>Login</title>
+    <title>Login - Sistem Rekomendasi Pesantren</title>
 </head>
 <body>
-    <div class="page d-flex justify-center align-center">
+    <div class="page d-flex justify-center align-center" style="flex-direction: column;">
+
+        <!-- Judul Sistem -->
+        <div class="txt-c mb-20">
+            <h1 class="m-0 c-blue fs-22 fw-bold">
+                <i class="fa-solid fa-mosque fa-fw"></i>
+                Sistem Rekomendasi Pesantren
+            </h1>
+            <p class="c-grey fs-13 mt-5 m-0">Temukan pesantren terbaik untuk Anda</p>
+        </div>
+
         <!-- Login Box -->
         <div class="login bg-white rad-10 p-20" style="width: 400px;">
             <!-- Login Header -->
@@ -116,7 +126,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         >
                     </div>
                 </div>
-                
+
                 <!-- Submit Button -->
                 <input
                     type="submit"
@@ -126,6 +136,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </form>
         </div>
         <!-- End Login Box -->
+
     </div>
 </body>
 </html>
